@@ -44,7 +44,7 @@ public class EmployeeService {
     @Produces("application/xml,application/json")
     @Path("/loc")
     public List<Locations> getAllLocations(){
-    
+        System.out.println("abc");
       List<Locations>  emplist = SessionBean.getLocationsFindAll();
 System.out.println("hello");
         return emplist;
