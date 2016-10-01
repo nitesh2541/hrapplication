@@ -31,7 +31,7 @@ public class EmployeeService {
     @Produces("application/xml,application/json")
     @Path("/emp")
     public List<Employees> getAllEmployees(){
-      //      EmployeeList listOfEmployees = new EmployeeList();
+     
       List<Employees>  emplist =  SessionBean.getEmployeesFindAll();
       
         return emplist;
@@ -46,7 +46,7 @@ public class EmployeeService {
     public List<Locations> getAllLocations(){
     
       List<Locations>  emplist = SessionBean.getLocationsFindAll();
-
+System.out.println("hello");
         return emplist;
         }
 }
